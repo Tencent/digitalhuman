@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "poet-benchmark"
+version = "0.1.0"
+description = "Code companion for From Poetry Parties to Poetry Critics"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "openai>=1.0.0",
+    "python-dotenv>=1.0.0",
+    "pydantic>=2.0.0",
+    "tqdm>=4.66.0",
+    "requests>=2.31.0",
+    "pandas>=2.0",
+    "openpyxl>=3.1",
+    "pyarrow>=14.0",
+    "loguru>=0.7.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["common*"]
+namespaces = true
